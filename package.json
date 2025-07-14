@@ -1,0 +1,35 @@
+{
+  "name": "xfoxx.com",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.3.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@uidotdev/usehooks": "^2.4.1",
+    "astro": "^5.11.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-focus-on": "^3.10.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.5.1",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "typescript-eslint": "^8.36.0"
+  }
+}
