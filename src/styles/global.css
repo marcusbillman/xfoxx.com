@@ -1,1 +1,48 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-*: initial;
+  --color-yellow-300: #ffce3c;
+  --color-red-300: #ff6a3c;
+  --color-grey-100: #f5f5f5;
+  --color-grey-200: #e5e5e5;
+  --color-grey-300: #d4d4d4;
+  --color-grey-400: #a3a3a3;
+  --color-grey-500: #737373;
+  --color-grey-600: #525252;
+  --color-grey-700: #404040;
+  --color-grey-800: #262626;
+  --color-grey-900: #171717;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --font-sans: 'Instrument Sans', system-ui, sans-serif;
+  --font-handwriting: 'Caveat', cursive, sans-serif;
+
+  --tracking-*: initial;
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0;
+}
+
+@theme inline {
+  --text-color-default: var(--color-grey-100);
+  --text-color-subtle: var(--color-grey-300);
+  --text-color-accent: var(--color-yellow-300);
+  --text-color-inverted: var(--color-grey-900);
+
+  --background-color-default: var(--color-grey-800);
+  --background-color-subtle: var(--color-grey-900);
+  --background-color-accent: var(--color-yellow-300);
+  --background-color-inverted: var(--color-grey-100);
+
+  --border-color-default: var(--color-grey-700);
+}
+
+.material-symbols-sharp {
+  font-size: inherit;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}

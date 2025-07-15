@@ -17,7 +17,7 @@ export default {
     },
   ],
   singleQuote: true,
-  tailwindConfig: './tailwind.config.mjs',
+  tailwindStylesheet: './src/styles/global.css',
   importOrder: [
     '<TYPES>', // Third-party types
     '<TYPES>^[.]', // Local types
