@@ -22,6 +22,35 @@
   --tracking-*: initial;
   --tracking-tight: -0.03em;
   --tracking-normal: 0;
+
+  --animate-fade-in: fade-in 0.5s ease-in-out;
+  --animate-slide-up: slide-up 0.5s ease-in-out;
+  --animate-slide-down: slide-down 0.5s ease-in-out;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 
 @theme inline {
