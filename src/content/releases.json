@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Lorem Ipsum",
+    "type": "Single",
+    "date": "2025-01-01",
+    "cover": "../assets/releases/placeholder.jpg",
+    "url": "https://example.com",
+    "id": "lorem-ipsum",
+    "orderRank": 1
+  },
+  {
+    "title": "Dolor Sit Amet",
+    "type": "Album",
+    "date": "2024-12-01",
+    "cover": "../assets/releases/placeholder.jpg",
+    "url": "https://example.com",
+    "id": "dolor-sit-amet",
+    "orderRank": 2
+  },
+  {
+    "title": "Consectetur Adipiscing",
+    "type": "Single",
+    "date": "2024-11-01",
+    "cover": "../assets/releases/placeholder.jpg",
+    "url": "https://example.com",
+    "id": "consectetur-adipiscing",
+    "orderRank": 3
+  },
+  {
+    "title": "Elit Sed Do Eiusmod",
+    "type": "Album",
+    "date": "2023-10-01",
+    "cover": "../assets/releases/placeholder.jpg",
+    "url": "https://example.com",
+    "id": "elit-sed-do-eiusmod",
+    "orderRank": 4
+  }
+]

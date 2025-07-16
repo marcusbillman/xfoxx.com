@@ -75,3 +75,11 @@
     'GRAD' 0,
     'opsz' 24;
 }
+
+@utility writing-vertical {
+  writing-mode: vertical-rl;
+}
+
+@utility writing-horizontal {
+  writing-mode: horizontal-tb;
+}

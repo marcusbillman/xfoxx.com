@@ -1,0 +1,129 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+import AppleMusicLogo from '@/assets/apple-music-logo.svg';
+import SoundCloudLogo from '@/assets/soundcloud-logo.svg';
+import SpotifyLogo from '@/assets/spotify-logo.svg';
+import YoutubeMusicLogo from '@/assets/youtube-music-logo.svg';
+import Arrow from '../Arrow';
+
+const releases = (await getCollection('releases')).sort((a, b) => {
+  return a.data.orderRank - b.data.orderRank;
+});
+---
+
+<section
+  id="music"
+  class="grid grid-cols-1 border-t border-default md:grid-cols-[4rem_1fr_4rem]"
+>
+  {/* Left gutter */}
+  <div
+    class="hidden h-full items-center border-r border-default pt-16 pb-6 writing-vertical md:flex"
+  >
+    <h2 class="sticky top-22 text-subtle">MUSIC</h2>
+  </div>
+  {/* Center content */}
+  <div class="pt-16 pb-6 md:py-16">
+    <h2
+      class="mb-6 border-y border-default bg-subtle px-6 py-2 text-subtle md:hidden"
+    >
+      MUSIC
+    </h2>
+    <div class="mx-auto flex max-w-6xl flex-col gap-12 px-6 md:gap-16">
+      <ul
+        class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4"
+      >
+        {
+          releases.map((release) => (
+            <li>
+              <a
+                href={release.data.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={release.data.cover}
+                  alt="Cover art"
+                  inferSize={true}
+                />
+                <p class="mt-6 font-bold">{release.data.title}</p>
+                <p class="text-subtle">
+                  <span>{release.data.type}</span>
+                  <span> • </span>
+                  <span>{new Date(release.data.date).getFullYear()}</span>
+                </p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <ul
+        class="grid grid-cols-1 gap-6 pb-24 sm:grid-cols-2 md:pb-16 lg:grid-cols-4"
+      >
+        <li>
+          <a
+            href="#"
+            class="group relative isolate flex h-24 items-center justify-center overflow-hidden bg-subtle"
+            aria-label="Listen on Spotify"
+          >
+            <SpotifyLogo
+              class="transition-colors duration-500 group-hover:text-black"
+            />
+            <span
+              class="absolute top-full left-1/2 -z-10 h-16 w-24 -translate-1/2 rounded-full bg-[#1ED760] blur-2xl transition-all duration-500 ease-in-out group-hover:top-1/2 group-hover:h-[200%] group-hover:w-[200%]"
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="group relative isolate flex h-24 items-center justify-center overflow-hidden bg-subtle"
+            aria-label="Listen on Apple Music"
+          >
+            <AppleMusicLogo
+              class="transition-colors duration-500 group-hover:text-inverted"
+            />
+            <span
+              class="absolute top-full left-1/2 -z-10 h-16 w-24 -translate-1/2 rounded-full bg-inverted blur-2xl transition-all duration-500 ease-in-out group-hover:top-1/2 group-hover:h-[200%] group-hover:w-[200%]"
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="group relative isolate flex h-24 items-center justify-center overflow-hidden bg-subtle"
+            aria-label="Listen on YouTube Music"
+          >
+            <YoutubeMusicLogo />
+            <span
+              class="absolute top-full left-1/2 -z-10 h-16 w-24 -translate-1/2 rounded-full bg-[#FF0032] blur-2xl transition-all duration-500 ease-in-out group-hover:top-1/2 group-hover:h-[200%] group-hover:w-[200%]"
+            ></span>
+          </a>
+        </li>
+        <li class="relative">
+          <a
+            href="#"
+            class="group relative isolate flex h-24 items-center justify-center overflow-hidden bg-subtle"
+            aria-label="Listen on SoundCloud"
+          >
+            <SoundCloudLogo />
+            <span
+              class="absolute top-full left-1/2 -z-10 h-16 w-24 -translate-1/2 rounded-full bg-[#FF5601] blur-2xl transition-all duration-500 ease-in-out group-hover:top-1/2 group-hover:h-[200%] group-hover:w-[200%]"
+            ></span>
+          </a>
+          <div
+            class="absolute top-full right-1/2 mt-6 flex w-max translate-x-1/2 flex-col items-center gap-4 text-accent md:translate-x-0 md:flex-row-reverse md:gap-0"
+          >
+            <Arrow className="translate-x-1/3 -rotate-45 md:rotate-0" />
+            <span class="font-handwriting text-2xl leading-[0.9] md:mt-4">
+              Spontaneous uploads
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  {/* Right gutter */}
+  <div class="hidden h-full border-l border-default md:block"></div>
+</section>
