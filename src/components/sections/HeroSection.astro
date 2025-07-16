@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+
+import heroBg from '@/assets/hero-bg.jpg';
+import Arrow from '../Arrow';
+---
+
+<section
+  id="hero"
+  class="grid h-[calc(100vh-4rem)] grid-cols-1 md:grid-cols-[4rem_1fr_4rem]"
+>
+  {/* Left gutter */}
+  <div class="hidden h-full border-r border-default md:block"></div>
+  {/* Center content */}
+  <div class="pt-16">
+    <div class="relative flex h-full flex-col justify-end">
+      <Image
+        src={heroBg}
+        alt=""
+        class="absolute top-0 left-0 -z-10 h-full w-full object-cover object-left-top"
+      />
+      <div
+        class="mx-auto flex w-full max-w-6xl flex-col-reverse gap-3 p-6 md:p-16"
+      >
+        <h1 class="text-4xl tracking-tight text-balance md:text-6xl">
+          I make dance music<br />for me and my friends :)
+        </h1>
+        <div
+          class="ml-24 flex w-fit flex-col items-center gap-4 text-accent md:ml-72 md:flex-row-reverse md:gap-2"
+        >
+          <span
+            class="text-center font-handwriting text-2xl leading-[0.9] md:text-left"
+          >
+            Mostly drum & bass<br />and house
+          </span>
+          <Arrow
+            className="-rotate-120 rotate-y-180 md:rotate-180 md:rotate-y-0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Right gutter */}
+  <div class="hidden h-full border-l border-default md:block"></div>
+</section>
