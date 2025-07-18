@@ -1,0 +1,146 @@
+---
+import { Image } from 'astro:assets';
+
+import artistsImage from '@/assets/about-artists.jpg';
+import bioImage from '@/assets/about-bio.jpg';
+import gearImage from '@/assets/about-gear.jpg';
+import nameImage from '@/assets/about-name.jpg';
+import Question from '@/components/Question.astro';
+---
+
+<section
+  id="about"
+  class="grid grid-cols-1 border-t border-default md:grid-cols-[4rem_1fr_4rem]"
+>
+  {/* Left gutter */}
+  <div
+    class="hidden h-full items-center border-r border-default pt-12 pb-6 writing-vertical md:flex"
+  >
+    <h2 class="sticky top-22 text-subtle">ABOUT</h2>
+  </div>
+  {/* Center content */}
+  <div class="">
+    <h2 class="bg-subtle px-6 py-2 text-subtle md:hidden">ABOUT</h2>
+    <Question question="A quick intro">
+      <p>
+        Hi! I'm <span class="text-accent">xfoxx</span>, a student, tech nerd,
+        and bedroom producer.
+      </p>
+      <p>
+        My music varies a bit in mood and style, but stays mostly within the EDM
+        umbrella. I like simple, catchy melodies and pronounced drum beats, but
+        I also enjoy veering into more wonky sound design.
+      </p>
+      <p>
+        I've been making music for fun since I was a kid, uploading songs to
+        SoundCloud. In 2025, I decided to start releasing my music on streaming
+        platforms, mainly to make it easier for my friends to listen to it. I
+        hope you like it too!
+      </p>
+      <Image
+        src={bioImage}
+        alt="Compact MIDI keyboard, headphones, and a laptop"
+        slot="image"
+      />
+    </Question>
+    <Question question="Artists that inspire me">
+      <p>
+        I love many kinds of music and don't really have a favourite artist, but
+        here are some of my most influential ones:
+      </p>
+      <ul
+        class="grid list-disc grid-cols-1 gap-x-6 pl-8 lg:list-none lg:grid-cols-2 lg:pl-0"
+      >
+        <li>Avicii</li>
+        <li>Bou</li>
+        <li>Camo & Krooked</li>
+        <li>Chase & Status</li>
+        <li>C418</li>
+        <li>Elephante</li>
+        <li>Etherwood</li>
+        <li>Fox Stevenson</li>
+        <li>Flume</li>
+        <li>Fred again..</li>
+        <li>goddard.</li>
+        <li>Gryffin</li>
+        <li>Hybrid Minds</li>
+        <li>ILLENIUM</li>
+        <li>Knock2</li>
+        <li>Lena Raine</li>
+        <li>Mild Minds</li>
+        <li>Phibes</li>
+        <li>piri</li>
+        <li>San Holo</li>
+        <li>Skrillex</li>
+        <li>The Chainsmokers</li>
+        <li>venbee</li>
+        <li>Vibe Chemistry</li>
+      </ul>
+      <p class="text-subtle italic">...and many more!</p>
+      <Image
+        src={artistsImage}
+        alt="List of artists in my Spotify library"
+        slot="image"
+      />
+    </Question>
+    <Question question="Gear and software">
+      <p>
+        I use <span class="text-accent">Ableton Live</span> on my <span
+          class="text-accent">MacBook Air (M2, 2022)</span
+        >. Apart from the stock plugins, my favourites include
+      </p>
+      <ul
+        class="grid list-disc grid-cols-1 gap-x-6 pl-8 lg:list-none lg:grid-cols-2 lg:pl-0"
+      >
+        <li>Komplete 15</li>
+        <li>V Collection 9</li>
+        <li>FX Collection 4</li>
+        <li>ShaperBox 3</li>
+        <li>Vital</li>
+        <li>Kilohearts Essentials</li>
+      </ul>
+      <p>
+        My main controllers are the
+        <span class="text-accent">Arturia MiniLab 3</span>
+        and <span class="text-accent">Ableton Push 2</span>. For audio, I use a
+        <span class="text-accent">Focusrite Scarlett 2i2</span>,
+        <span class="text-accent">Beyerdynamic DT 700 PRO X</span>, and <span
+          class="text-accent">Shure SM57</span
+        >. My samples come from <span class="text-accent">Splice</span> and I release
+        through <span class="text-accent">LANDR</span>.
+      </p>
+      <Image
+        src={gearImage}
+        alt="MIDI keyboard, microphone, and laptop"
+        slot="image"
+      />
+    </Question>
+    <Question question="Behind the name">
+      <p>
+        <span class="text-accent">xfoxx [eks-foks]</span> is a screen name I've used
+        since I was a kid. I created it on my Nintendo DS Lite around 2010 with roughly
+        the following thought process:
+      </p>
+      <ul class="list-disc pl-8">
+        <li>Fox is a cool animal</li>
+        <li>X is a cool letter</li>
+        <li>37 (?)</li>
+      </ul>
+      <p>
+        <span class="text-accent">X-fox 37</span> it was. Luckily, I've cleaned up
+        the spelling since then.
+      </p>
+      <p>
+        Sometimes I think about changing my name, but it's been with me for so
+        long at this point. And I do like it—a bit gamery but still rather neat.
+      </p>
+      <Image
+        src={nameImage}
+        alt="The username settings screen on a Nintendo DS Lite"
+        slot="image"
+      />
+    </Question>
+  </div>
+  {/* Right gutter */}
+  <div class="hidden h-full border-l border-default md:block"></div>
+</section>

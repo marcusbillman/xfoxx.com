@@ -1,0 +1,31 @@
+---
+import Icon from './Icon';
+
+interface Props {
+  question: string;
+}
+
+const { question } = Astro.props;
+---
+
+<details class="group border-default not-first-of-type:border-t">
+  <summary
+    class="cursor-pointer list-none py-8 text-xl transition-all group-open:font-bold marker:hidden not-group-open:hover:bg-inverted not-group-open:hover:text-inverted md:py-12 md:text-4xl"
+  >
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6">
+      <span>{question}</span>
+      <Icon name="add" className="group-open:hidden" />
+      <Icon name="remove" className="not-group-open:hidden" />
+    </div>
+  </summary>
+  <div>
+    <div
+      class="mx-auto mb-8 grid max-w-6xl grid-cols-1 gap-6 px-6 md:mb-12 md:grid-cols-2"
+    >
+      <div class="space-y-4">
+        <slot />
+      </div>
+      <slot name="image" />
+    </div>
+  </div>
+</details>
