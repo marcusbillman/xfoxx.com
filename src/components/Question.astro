@@ -1,5 +1,5 @@
 ---
-import Icon from './Icon';
+import { Add, Remove } from '@nine-thirty-five/material-symbols-react/sharp';
 
 interface Props {
   question: string;
@@ -14,8 +14,8 @@ const { question } = Astro.props;
   >
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6">
       <span>{question}</span>
-      <Icon name="add" className="group-open:hidden" />
-      <Icon name="remove" className="not-group-open:hidden" />
+      <Add className="group-open:hidden" />
+      <Remove className="not-group-open:hidden" />
     </div>
   </summary>
   <div>

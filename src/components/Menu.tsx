@@ -1,6 +1,12 @@
 import { twMerge } from 'tailwind-merge';
 
-import Icon from './Icon';
+import {
+  Apple,
+  SoundCloud,
+  Spotify,
+  Tidal,
+  YouTube,
+} from '@/components/BrandIcon';
 
 interface MenuProps {
   isOpen: boolean;
@@ -11,7 +17,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
   return (
     <div
       className={twMerge(
-        'bg-default/80 pointer-events-auto flex grow flex-col backdrop-blur-md transition duration-300',
+        'pointer-events-auto flex grow flex-col bg-default/80 backdrop-blur-md transition duration-300',
         !isOpen && 'translate-x-full transform',
       )}
       aria-hidden={!isOpen}
@@ -33,7 +39,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
           </a>
         </li>
       </ul>
-      <ul className="border-default flex flex-1 flex-col justify-center gap-4 border-t p-6">
+      <ul className="flex flex-1 flex-col justify-center gap-4 border-t border-default p-6">
         <li>
           <a
             href="#"
@@ -41,7 +47,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <Icon name="spotify" />
+            <Spotify />
             spotify
           </a>
         </li>
@@ -52,7 +58,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <Icon name="apple" />
+            <Apple />
             apple music
           </a>
         </li>
@@ -63,7 +69,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <Icon name="youtube" />
+            <YouTube />
             youtube music
           </a>
         </li>
@@ -74,7 +80,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <Icon name="tidal" />
+            <Tidal />
             tidal
           </a>
         </li>
@@ -85,7 +91,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <Icon name="soundcloud" />
+            <SoundCloud />
             soundcloud
           </a>
         </li>

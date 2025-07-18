@@ -67,15 +67,6 @@
   --border-color-default: var(--color-grey-700);
 }
 
-.material-symbols-sharp {
-  font-size: inherit;
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
-}
-
 @utility writing-vertical {
   writing-mode: vertical-rl;
 }

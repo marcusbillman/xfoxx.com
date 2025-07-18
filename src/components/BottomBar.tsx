@@ -1,6 +1,10 @@
+import {
+  ArrowForward,
+  MoreHoriz,
+} from '@nine-thirty-five/material-symbols-react/sharp';
 import { twMerge } from 'tailwind-merge';
 
-import Icon from './Icon';
+import { Apple, Spotify, YouTube } from '@/components/BrandIcon';
 
 interface BottomBarProps {
   isMenuOpen: boolean;
@@ -14,11 +18,11 @@ export default function BottomBar({
   return (
     <div
       className={twMerge(
-        'border-default animate-slide-up to-grey-800 pointer-events-auto h-16 grid-cols-[4rem_1fr_4rem] border-t bg-linear-to-b backdrop-blur-[1px] transition duration-300 md:grid',
+        'pointer-events-auto h-16 animate-slide-up grid-cols-[4rem_1fr_4rem] border-t border-default bg-linear-to-b to-grey-800 backdrop-blur-[1px] transition duration-300 md:grid',
         isMenuOpen && 'bg-default/80 backdrop-blur-md',
       )}
     >
-      <div className="border-default hidden h-full border-r md:block"></div>
+      <div className="hidden h-full border-r border-default md:block"></div>
       <div className="relative h-full overflow-hidden">
         {/* TODO: Add random lyrics easter egg */}
         <div
@@ -27,38 +31,38 @@ export default function BottomBar({
             !isMenuOpen && 'translate-y-full',
           )}
         >
-          <Icon name="arrow_forward" />
+          <ArrowForward />
           have a great day!
         </div>
         <ul
           className={twMerge(
-            'text-subtle absolute top-0 left-0 flex h-full w-full items-center justify-center gap-8 text-2xl transition duration-300',
+            'absolute top-0 left-0 flex h-full w-full items-center justify-center gap-8 text-2xl text-subtle transition duration-300',
             isMenuOpen && '-translate-y-full',
           )}
         >
           <li>
             <a href="#" className="flex">
-              <Icon name="spotify" />
+              <Spotify />
             </a>
           </li>
           <li>
             <a href="#" className="flex">
-              <Icon name="apple" />
+              <Apple />
             </a>
           </li>
           <li>
             <a href="#" className="flex">
-              <Icon name="youtube" />
+              <YouTube />
             </a>
           </li>
           <li>
             <button className="flex">
-              <Icon name="more_horiz" />
+              <MoreHoriz />
             </button>
           </li>
         </ul>
       </div>
-      <div className="border-default hidden h-full border-l md:block"></div>
+      <div className="hidden h-full border-l border-default md:block"></div>
     </div>
   );
 }
