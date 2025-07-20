@@ -15,4 +15,13 @@ const releases = defineCollection({
     }),
 });
 
-export const collections = { releases };
+const quotes = defineCollection({
+  loader: file('src/content/quotes.json'),
+  schema: z.object({
+    text: z.string(),
+    url: z.string().url(),
+    id: z.string(),
+  }),
+});
+
+export const collections = { releases, quotes };
