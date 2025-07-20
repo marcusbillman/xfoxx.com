@@ -37,6 +37,7 @@ export default function TopBar({
         <button
           className="cursor-pointer md:hidden"
           onClick={onClickMenuButton}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         >
           {isMenuOpen ? (
             <Close className="size-8 transition-colors hover:text-accent" />

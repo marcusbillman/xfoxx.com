@@ -23,7 +23,9 @@ import '@/styles/global.css';
     <Analytics />
   </head>
   <body class="bg-default text-xl text-default">
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Navigation client:only="react" />
   </body>
 </html>

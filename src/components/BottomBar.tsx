@@ -97,11 +97,12 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
               <YouTube />
             </a>
           </li>
-          <li
-            className="transition-colors hover:text-default max-sm:hidden"
-            aria-label="Tidal"
-          >
-            <a href="#">
+          <li className="max-sm:hidden">
+            <a
+              href="#"
+              className="transition-colors hover:text-default"
+              aria-label="Tidal"
+            >
               <Tidal />
             </a>
           </li>
