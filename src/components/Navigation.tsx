@@ -30,7 +30,7 @@ export default function Navigation() {
       >
         <TopBar isMenuOpen={isMenuOpen} onClickMenuButton={toggleMenu} />
         <Menu isOpen={isMenuOpen} onClose={toggleMenu} />
-        <BottomBar isMenuOpen={isMenuOpen} onClickMenuButton={toggleMenu} />
+        <BottomBar isMenuOpen={isMenuOpen} />
       </nav>
     </FocusOn>
   );

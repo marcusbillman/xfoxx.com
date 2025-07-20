@@ -1,24 +1,23 @@
 import type { Quote } from '@/pages/api/quote';
 
 import { useEffect, useState } from 'react';
-import {
-  ArrowForward,
-  MoreHoriz,
-} from '@nine-thirty-five/material-symbols-react/sharp';
+import { ArrowForward } from '@nine-thirty-five/material-symbols-react/sharp';
 import { useWindowScroll, useWindowSize } from '@uidotdev/usehooks';
 import { twMerge } from 'tailwind-merge';
 
-import { Apple, Spotify, YouTube } from '@/components/BrandIcon';
+import {
+  Apple,
+  SoundCloud,
+  Spotify,
+  Tidal,
+  YouTube,
+} from '@/components/BrandIcon';
 
 interface BottomBarProps {
   isMenuOpen: boolean;
-  onClickMenuButton: () => void;
 }
 
-export default function BottomBar({
-  isMenuOpen,
-  onClickMenuButton,
-}: BottomBarProps) {
+export default function BottomBar({ isMenuOpen }: BottomBarProps) {
   const [quote, setQuote] = useState<Quote>();
 
   useEffect(() => {
