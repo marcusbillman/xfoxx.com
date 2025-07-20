@@ -15,7 +15,7 @@ const releases = (await getCollection('releases')).sort((a, b) => {
 
 <section
   id="music"
-  class="grid grid-cols-1 border-t border-default md:grid-cols-[4rem_1fr_4rem]"
+  class="grid scroll-m-16 grid-cols-1 border-t border-default md:grid-cols-[4rem_1fr_4rem]"
 >
   {/* Left gutter */}
   <div
@@ -32,11 +32,11 @@ const releases = (await getCollection('releases')).sort((a, b) => {
     </h2>
     <div class="mx-auto flex max-w-6xl flex-col gap-12 px-6 md:gap-16">
       <ul
-        class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4"
+        class="group grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4"
       >
         {
           releases.map((release) => (
-            <li>
+            <li class="transition-opacity group-hover:opacity-50 hover:opacity-100">
               <a
                 href={release.data.url}
                 target="_blank"

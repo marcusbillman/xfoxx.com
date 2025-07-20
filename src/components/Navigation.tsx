@@ -28,7 +28,11 @@ export default function Navigation() {
           if (e.key === 'Escape') setIsMenuOpen(false);
         }}
       >
-        <TopBar isMenuOpen={isMenuOpen} onClickMenuButton={toggleMenu} />
+        <TopBar
+          isMenuOpen={isMenuOpen}
+          onClickMenuButton={toggleMenu}
+          onClickLogo={() => setIsMenuOpen(false)}
+        />
         <Menu isOpen={isMenuOpen} onClose={toggleMenu} />
         <BottomBar isMenuOpen={isMenuOpen} />
       </nav>

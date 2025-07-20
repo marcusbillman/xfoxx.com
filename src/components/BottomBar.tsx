@@ -53,7 +53,7 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
           <a href={quote.data.url} target="_blank" rel="noopener noreferrer">
             <div
               className={twMerge(
-                'absolute top-0 left-0 flex h-full w-full items-center gap-2 px-6 transition duration-300 hover:text-accent md:justify-center',
+                'absolute top-0 left-0 flex h-full w-full items-center gap-2 px-6 text-subtle transition duration-300 hover:text-accent md:justify-center',
                 !showQuote && 'translate-y-full',
               )}
             >
@@ -71,24 +71,48 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
           )}
         >
           <li>
-            <a href="#" className="flex">
+            <a
+              href="#"
+              className="transition-colors hover:text-default"
+              aria-label="Spotify"
+            >
               <Spotify />
             </a>
           </li>
           <li>
-            <a href="#" className="flex">
+            <a
+              href="#"
+              className="transition-colors hover:text-default"
+              aria-label="Apple Music"
+            >
               <Apple />
             </a>
           </li>
           <li>
-            <a href="#" className="flex">
+            <a
+              href="#"
+              className="transition-colors hover:text-default"
+              aria-label="YouTube Music"
+            >
               <YouTube />
             </a>
           </li>
+          <li
+            className="transition-colors hover:text-default max-sm:hidden"
+            aria-label="Tidal"
+          >
+            <a href="#">
+              <Tidal />
+            </a>
+          </li>
           <li>
-            <button className="flex">
-              <MoreHoriz />
-            </button>
+            <a
+              href="#"
+              className="transition-colors hover:text-default"
+              aria-label="SoundCloud"
+            >
+              <SoundCloud />
+            </a>
           </li>
         </ul>
       </div>

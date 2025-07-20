@@ -24,17 +24,29 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
     >
       <ul className="flex flex-1 flex-col justify-center gap-6 p-6 text-4xl">
         <li>
-          <a href="#music" onClick={onClose}>
+          <a
+            href="#music"
+            className="block transition-colors hover:text-accent"
+            onClick={onClose}
+          >
             music
           </a>
         </li>
         <li>
-          <a href="#about" onClick={onClose}>
+          <a
+            href="#about"
+            className="block transition-colors hover:text-accent"
+            onClick={onClose}
+          >
             about
           </a>
         </li>
         <li>
-          <a href="#contact" onClick={onClose}>
+          <a
+            href="#contact"
+            className="block transition-colors hover:text-accent"
+            onClick={onClose}
+          >
             contact
           </a>
         </li>
@@ -45,7 +57,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 transition-colors hover:text-accent"
           >
             <Spotify />
             spotify
@@ -56,7 +68,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 transition-colors hover:text-accent"
           >
             <Apple />
             apple music
@@ -67,7 +79,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 transition-colors hover:text-accent"
           >
             <YouTube />
             youtube music
@@ -78,7 +90,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 transition-colors hover:text-accent"
           >
             <Tidal />
             tidal
@@ -89,7 +101,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             href="https://soundcloud.com/xfoxx37"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 transition-colors hover:text-accent"
           >
             <SoundCloud />
             soundcloud

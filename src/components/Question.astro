@@ -10,7 +10,7 @@ const { question } = Astro.props;
 
 <details class="group border-default not-first-of-type:border-t">
   <summary
-    class="cursor-pointer list-none py-8 text-xl transition-all group-open:font-bold marker:hidden not-group-open:hover:bg-inverted not-group-open:hover:text-inverted md:py-12 md:text-4xl"
+    class="cursor-pointer list-none py-8 text-xl transition-all group-open:font-bold not-group-open:hover:bg-inverted not-group-open:hover:text-inverted md:py-12 md:text-4xl"
   >
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6">
       <span>{question}</span>
@@ -18,7 +18,9 @@ const { question } = Astro.props;
       <Remove className="not-group-open:hidden" />
     </div>
   </summary>
-  <div>
+  <div
+    class="h-0 overflow-hidden transition-all [interpolate-size:allow-keywords] group-open:h-auto"
+  >
     <div
       class="mx-auto mb-8 grid max-w-6xl grid-cols-1 gap-6 px-6 md:mb-12 md:grid-cols-2"
     >

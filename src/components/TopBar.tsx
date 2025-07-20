@@ -7,9 +7,14 @@ import { Logo } from './Logo';
 interface TopBarProps {
   isMenuOpen: boolean;
   onClickMenuButton: () => void;
+  onClickLogo: () => void;
 }
 
-export default function TopBar({ isMenuOpen, onClickMenuButton }: TopBarProps) {
+export default function TopBar({
+  isMenuOpen,
+  onClickMenuButton,
+  onClickLogo,
+}: TopBarProps) {
   const [{ y }, _scrollTo] = useWindowScroll();
 
   return (
@@ -23,25 +28,37 @@ export default function TopBar({ isMenuOpen, onClickMenuButton }: TopBarProps) {
       <div className="hidden h-full border-r border-default md:block"></div>
       {/* Center content */}
       <div className="flex h-full items-end justify-between px-6 md:px-0">
-        <Logo
-          hideWordmark={!isMenuOpen && y !== null && y > 0}
-          className="h-8 text-accent"
-        />
+        <a href="#hero" onClick={onClickLogo}>
+          <Logo
+            hideWordmark={!isMenuOpen && y !== null && y > 0}
+            className="h-8 text-accent transition-colors hover:text-default"
+          />
+        </a>
         <button
-          className="flex cursor-pointer text-3xl md:hidden"
+          className="cursor-pointer md:hidden"
           onClick={onClickMenuButton}
         >
-          {isMenuOpen ? <Close /> : <Menu />}
+          {isMenuOpen ? (
+            <Close className="size-8 transition-colors hover:text-accent" />
+          ) : (
+            <Menu className="size-8 transition-colors hover:text-accent" />
+          )}
         </button>
         <ul className="hidden gap-6 text-subtle md:flex">
           <li>
-            <a href="#music">music</a>
+            <a href="#music" className="transition-colors hover:text-default">
+              music
+            </a>
           </li>
           <li>
-            <a href="#about">about</a>
+            <a href="#about" className="transition-colors hover:text-default">
+              about
+            </a>
           </li>
           <li>
-            <a href="#contact">contact</a>
+            <a href="#contact" className="transition-colors hover:text-default">
+              contact
+            </a>
           </li>
         </ul>
       </div>
