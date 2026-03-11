@@ -54,7 +54,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
       <ul className="flex flex-1 flex-col justify-center gap-4 border-t border-default p-6">
         <li>
           <a
-            href="#"
+            href="https://open.spotify.com/artist/0LtQgT80t5rQw44aANkT4o?si=5BSzv_rCQN-_akT-q_YiCA"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors hover:text-accent"
@@ -65,7 +65,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
         </li>
         <li>
           <a
-            href="#"
+            href="https://music.apple.com/se/artist/xfoxx/1880720130"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors hover:text-accent"
@@ -76,7 +76,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
         </li>
         <li>
           <a
-            href="#"
+            href="https://music.youtube.com/channel/UCsbEuAn8U5Mg3-ZooQ4jsSg"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors hover:text-accent"
@@ -87,7 +87,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
         </li>
         <li>
           <a
-            href="#"
+            href="https://tidal.com/artist/75142989"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors hover:text-accent"

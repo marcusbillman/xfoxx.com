@@ -72,7 +72,9 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
         >
           <li>
             <a
-              href="#"
+              href="https://open.spotify.com/artist/0LtQgT80t5rQw44aANkT4o?si=5BSzv_rCQN-_akT-q_YiCA"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-colors hover:text-default"
               aria-label="Spotify"
             >
@@ -81,7 +83,9 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
           </li>
           <li>
             <a
-              href="#"
+              href="https://music.apple.com/se/artist/xfoxx/1880720130"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-colors hover:text-default"
               aria-label="Apple Music"
             >
@@ -90,7 +94,9 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
           </li>
           <li>
             <a
-              href="#"
+              href="https://music.youtube.com/channel/UCsbEuAn8U5Mg3-ZooQ4jsSg"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-colors hover:text-default"
               aria-label="YouTube Music"
             >
@@ -99,7 +105,9 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
           </li>
           <li className="max-sm:hidden">
             <a
-              href="#"
+              href="https://tidal.com/artist/75142989"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-colors hover:text-default"
               aria-label="Tidal"
             >
@@ -108,7 +116,9 @@ export default function BottomBar({ isMenuOpen }: BottomBarProps) {
           </li>
           <li>
             <a
-              href="#"
+              href="https://soundcloud.com/xfoxx37"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-colors hover:text-default"
               aria-label="SoundCloud"
             >
