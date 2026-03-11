@@ -1,38 +1,38 @@
 [
   {
-    "title": "Lorem Ipsum",
+    "title": "U DON'T WANT",
     "type": "Single",
-    "date": "2025-01-01",
-    "cover": "../assets/releases/placeholder.jpg",
-    "url": "https://example.com",
-    "id": "lorem-ipsum",
+    "date": "2024-09-11",
+    "cover": "../assets/releases/u-dont-want.jpg",
+    "url": "https://artists.landr.com/xfoxx-u-dont-want",
+    "id": "u-dont-want",
     "orderRank": 1
   },
   {
-    "title": "Dolor Sit Amet",
-    "type": "Album",
-    "date": "2024-12-01",
-    "cover": "../assets/releases/placeholder.jpg",
-    "url": "https://example.com",
-    "id": "dolor-sit-amet",
+    "title": "Forever (with Forsarna)",
+    "type": "Unreleased",
+    "date": "2024-06-30",
+    "cover": "../assets/releases/forever.jpg",
+    "url": "https://soundcloud.com/xfoxx37/forever",
+    "id": "forever",
     "orderRank": 2
   },
   {
-    "title": "Consectetur Adipiscing",
+    "title": "Deranged",
     "type": "Single",
-    "date": "2024-11-01",
-    "cover": "../assets/releases/placeholder.jpg",
-    "url": "https://example.com",
-    "id": "consectetur-adipiscing",
+    "date": "2023-12-30",
+    "cover": "../assets/releases/deranged.jpg",
+    "url": "https://artists.landr.com/xfoxx-deranged",
+    "id": "deranged",
     "orderRank": 3
   },
   {
-    "title": "Elit Sed Do Eiusmod",
-    "type": "Album",
-    "date": "2023-10-01",
-    "cover": "../assets/releases/placeholder.jpg",
-    "url": "https://example.com",
-    "id": "elit-sed-do-eiusmod",
+    "title": "Procedure",
+    "type": "Single",
+    "date": "2023-07-21",
+    "cover": "../assets/releases/procedure.jpg",
+    "url": "https://artists.landr.com/xfoxx-procedure",
+    "id": "procedure",
     "orderRank": 4
   }
 ]
