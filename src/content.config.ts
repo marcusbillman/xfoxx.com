@@ -1,5 +1,6 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 import { file } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const releases = defineCollection({
   loader: file('src/content/releases.json'),
@@ -9,7 +10,7 @@ const releases = defineCollection({
       type: z.string(),
       date: z.coerce.date(),
       cover: image(),
-      url: z.string().url(),
+      url: z.url(),
       id: z.string(),
       orderRank: z.number(),
     }),
@@ -19,7 +20,7 @@ const quotes = defineCollection({
   loader: file('src/content/quotes.json'),
   schema: z.object({
     text: z.string(),
-    url: z.string().url(),
+    url: z.url(),
     id: z.string(),
   }),
 });

@@ -9,20 +9,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.3.0",
-    "@astrojs/vercel": "^8.2.2",
+    "@astrojs/check": "^0.9.7",
+    "@astrojs/react": "^5.0.0",
+    "@astrojs/vercel": "^10.0.0",
     "@nine-thirty-five/material-symbols-react": "^1.18.1",
     "@tailwindcss/vite": "^4.1.11",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@uidotdev/usehooks": "^2.4.1",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.11.1",
+    "astro": "^6.0.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-focus-on": "^3.10.0",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.5.1",
