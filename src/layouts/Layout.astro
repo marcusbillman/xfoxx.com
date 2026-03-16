@@ -9,23 +9,51 @@ import '@/styles/global.css';
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- HTML meta tags -->
+    <title>xfoxx</title>
     <meta
       name="description"
-      content="I make dance music for me and my friends"
+      content="I make dance music for me and my friends :)"
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>xfoxx</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:url" content="https://xfoxx.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="xfoxx" />
+    <meta
+      property="og:description"
+      content="I make dance music for me and my friends :)"
+    />
+    <meta property="og:image" content="https://xfoxx.com/social-embed.jpg" />
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="xfoxx.com" />
+    <meta property="twitter:url" content="https://xfoxx.com" />
+    <meta name="twitter:title" content="xfoxx" />
+    <meta
+      name="twitter:description"
+      content="I make dance music for me and my friends :)"
+    />
+    <meta name="twitter:image" content="https://xfoxx.com/social-embed.jpg" />
+
+    <!-- Vercel Web Analytics -->
     <Analytics />
   </head>
   <body class="bg-default text-xl text-default">
