@@ -31,3 +31,11 @@ const { question } = Astro.props;
     </div>
   </div>
 </details>
+
+<style is:global>
+  @reference "@/styles/global.css";
+
+  details a {
+    @apply text-accent underline transition-colors hover:text-default;
+  }
+</style>
