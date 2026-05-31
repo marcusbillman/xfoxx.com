@@ -1,12 +1,19 @@
 [
   {
+    "title": "Ghost Safari",
+    "type": "Single",
+    "date": "2026-05-30",
+    "cover": "../assets/releases/ghost-safari.jpg",
+    "url": "https://artists.landr.com/xfoxx-ghost-safari",
+    "id": "ghost-safari"
+  },
+  {
     "title": "U DON'T WANT",
     "type": "Single",
     "date": "2024-09-11",
     "cover": "../assets/releases/u-dont-want.jpg",
     "url": "https://artists.landr.com/xfoxx-u-dont-want",
-    "id": "u-dont-want",
-    "orderRank": 1
+    "id": "u-dont-want"
   },
   {
     "title": "Forever (with Forsarna)",
@@ -14,8 +21,7 @@
     "date": "2024-06-30",
     "cover": "../assets/releases/forever.jpg",
     "url": "https://soundcloud.com/xfoxx37/forever",
-    "id": "forever",
-    "orderRank": 2
+    "id": "forever"
   },
   {
     "title": "Deranged",
@@ -23,8 +29,7 @@
     "date": "2023-12-30",
     "cover": "../assets/releases/deranged.jpg",
     "url": "https://artists.landr.com/xfoxx-deranged",
-    "id": "deranged",
-    "orderRank": 3
+    "id": "deranged"
   },
   {
     "title": "Procedure",
@@ -32,7 +37,6 @@
     "date": "2023-07-21",
     "cover": "../assets/releases/procedure.jpg",
     "url": "https://artists.landr.com/xfoxx-procedure",
-    "id": "procedure",
-    "orderRank": 4
+    "id": "procedure"
   }
 ]
