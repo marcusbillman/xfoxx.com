@@ -12,7 +12,6 @@ const releases = defineCollection({
       cover: image(),
       url: z.url(),
       id: z.string(),
-      orderRank: z.number(),
     }),
 });
 

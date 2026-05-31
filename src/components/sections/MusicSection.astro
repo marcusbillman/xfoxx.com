@@ -8,9 +8,13 @@ import SpotifyLogo from '@/assets/spotify-logo.svg';
 import YoutubeMusicLogo from '@/assets/youtube-music-logo.svg';
 import Arrow from '../Arrow';
 
-const releases = (await getCollection('releases')).sort((a, b) => {
-  return a.data.orderRank - b.data.orderRank;
-});
+const releases = (await getCollection('releases'))
+  .sort((a, b) => {
+    const dateA = new Date(b.data.date).getTime();
+    const dateB = new Date(a.data.date).getTime();
+    return dateA - dateB;
+  })
+  .slice(0, 4);
 ---
 
 <section
