@@ -1,5 +1,13 @@
 [
   {
+    "title": "Cooked",
+    "type": "Single",
+    "date": "2026-06-22",
+    "cover": "../assets/releases/cooked.jpg",
+    "url": "https://artists.landr.com/xfoxx-cooked",
+    "id": "cooked"
+  },
+  {
     "title": "Ghost Safari",
     "type": "Single",
     "date": "2026-05-30",
